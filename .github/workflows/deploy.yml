@@ -4,8 +4,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-       - name: Hello
        - run: echo "hello docker"
-
-       - name: world
        - run: echo "sdfsdf"
