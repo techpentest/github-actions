@@ -4,5 +4,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-       - run: echo "hello docker"
-       - run: echo "sdfsdf"
+       - run: |
+              echo "sdasdsad"
+              echo "fkjsdhfjksdhfjksdkf"
+              echo "sdkjfhsdjkfhsdjkfhsdjkfh"
