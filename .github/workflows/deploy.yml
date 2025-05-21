@@ -1,10 +1,10 @@
-name: First Workflow
-on: push
+name: First-workflow
+on: workflow_dispatch
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-    steps:
-       - run: |
-              echo "sdasdsad"
-              echo "fkjsdhfjksdhfjksdkf"
-              echo "sdkjfhsdjkfhsdjkfhsdjkfh"
+  first-job:
+    runs-on:
+      steps:
+        - name: "hello"
+          run: |
+               echo "jsafjahd"
+               echo "demo world"
