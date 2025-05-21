@@ -1,2 +1,1 @@
-# github-actions
-github-actions demo for pipeline setup
+# Node js application with Jest js library
