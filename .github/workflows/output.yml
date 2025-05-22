@@ -6,6 +6,3 @@ jobs:
         steps:
           - name: output github context
             run: echo "${{toJson(github.event) }}" #expression
-
-          - name: Lint code
-            run: npm run lint
