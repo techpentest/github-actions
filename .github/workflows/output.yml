@@ -1,0 +1,8 @@
+name: Github result
+on: push
+jobs:
+    info:
+        runs-on: ubuntu-latest 
+        steps:
+          - name: output github context
+            run: echo "github"
