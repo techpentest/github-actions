@@ -1,14 +1,14 @@
 name: Deploy NODEJS Project
 on: push 
 jobs:
-  Test-job:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: get Code  
         uses: actions/checkout@v3 
 
       - name: Install Nodejs 
-        uses: actions/setup-node@v3 S
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
@@ -18,19 +18,22 @@ jobs:
       - name: Run Tests 
         run: npm test
 
-  Deploy-job:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: get Code  
         uses: actions/checkout@v3 
 
       - name: Install Nodejs 
-        uses: actions/setup-node@v3 S
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
       - name: Install Dependencies 
         run: npm ci 
+
+      - name: Buid project 
+        run: npm run build 
 
       - name: Run Deploy
         run: echo "Deploying...."
